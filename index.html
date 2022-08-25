@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script type="text/javascript" src="script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="container-body">
+        <header class="text-center">
+            <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        </header>
+        <main>
+            <section>
+                <div class="container gy-4">
+                    <div class="row p-5 d-flex flex-nowrap">
+                        <div class="col-4">
+                            <p>Nome Cognome</p>
+                            <input type="text" id="name">
+                        </div>
+                        <div class="col-4">
+                            <p>Km da percorrere</p>
+                            <input type="text" id="Nkm">
+                        </div>
+                        <div class="col-4">
+                            <p>Fascia d'età</p>
+                            <input type="text" id="age">
+                        </div>
+                    </div>
+                    <div class="row p-5 text-center">
+                        <div class="col-6">
+                            <input type="button" class="button" value="Genera" />
+                        </div>
+                        <div class="col-6">
+                            <input type="button" class="button" value="Annulla" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h1 class="text-center pb-5">IL TUO BIGLIETTO</h1>
+                <div class="container gy-4">
+                    <div class="row d-flex flex-nowrap">
+                        <div class="col-4">
+                            <h2>DETTAGLI PASSEGGERI</h2>
+                            <div>
+                                <h2>NOME PASSEGGERO</h2>
+                                <div id="nameTake"></div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <p>Offerta</p>
+                            <div id="ticket"></div>
+                        </div>
+                        <div class="col-3">
+                            <p>Carrozza</p>
+                            <div id="cab"></div>
+                        </div>
+                        <div class="col-3">
+                            <p>Codice CP</p>
+                            <div id="CPcode"></div>
+                        </div>
+                        <div class="col-3">
+                            <p>Costo biglietto</p>
+                            <div id="prize"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </section>
+
+</body>
+
+</html>
